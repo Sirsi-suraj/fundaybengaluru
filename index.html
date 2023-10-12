@@ -1,234 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Jewellery Works main page</title>
-    <style type="text/css">
-          body{
-              margin: 0px;
-              padding:0px;
-              background-color: rgb(47, 4, 97);
-          }
-          #container1{
-              width: 100%;
-              height: 90px;
-              position: relative;
-              z-index: 1;
-          }
-          
-          nav{
-              width: 100%;
-              height: 90px;
-              background: linear-gradient( grey, white, grey);
-              position: fixed;
-              display: flex;
-              justify-content: center;
-          }
-          #logo{
-              z-index: 1;
-              width: 70px;
-              height: 70px;
-              margin: 10px 10px;
-              border-radius: 50%;
-              display: flex;
-              position: fixed;
-              float: left;
-              
-          }
-          nav ul{
-              display: flex;
-              list-style: none;
-              align-items: center;    
-          }
-          
-          nav ul li button{
-              background-color: linear-gradient( white, grey, white);
-              border-radius: 10px;
-              border: solid 2px rgb(47, 4, 97);
-              width: 75px;
-              height: 30px;
-              margin: 0px 2px;
-              text-transform: uppercase;
-              text-align: center;
-              font-size: 11px;
-              font-weight: bold;
-              font-family: Arial, Helvetica, sans-serif;
-              color: rgb(17, 1, 53);
-          }
-          nav ul li button:hover{
-              background-color: rgb(240, 12, 137); 
-              color: white;
-          }
-          /*end of nav bar */
-          #container2{
-              width: 100%;
-              height: auto;
-              position: fixed;
-              z-index: 1;
-          }
-          marquee{
-              background-color: rgb(248, 13, 130);
-              color: white;
-              font-weight: bold;
-              font-size: 20px;
-              font-family: Arial, Helvetica, sans-serif;
-              text-transform: uppercase;
-          }
-        * {box-sizing: border-box}
-        body {font-family: Verdana, sans-serif; margin:0}
-        .mySlides {display: none}
-        img {vertical-align: middle;}
-        
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: 50px auto 0px auto;
-          box-shadow: 20px 20px  20px rgb(240, 26, 62),  -20px -20px  20px rgb(18, 172, 211);
-        }
-        
-        /* Next & previous buttons */
-        .prev, .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
-        }
-        
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-          
-        }
-        
-        .active, .dot:hover {
-          background-color: #717171;
-        }
-        
-        /* Fading animation */
-        .fade {
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        } 
-        .mySlides img{
-            width: 300px ;
-            height: 480px;
-        }   
-                
+</html>
+    <head>
+        <title>Project Practice</title>
+        <style type="text/css">
+            body{
+            background-color: #311b94;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            #menu{       
+            height: 40px;
+            margin: auto;
+            margin-top: 60px;
+            }
+            #logo{         
+            font-weight: bold;
+            float: left;
+            display: flex;
+            text-shadow: 3px 3px 5px grey; 
+            } 
+            ul{
+            float: right;
+            display: flex;
+            list-style: none;
+            margin: 0px;
+            text-shadow: 3px 3px 5px grey;      
+            }
+            .space1{        
+            margin: 11px 10px 10px 0px;   
+            }
+            li button{    
+            font-weight: bold;    
+            border-radius: 30px;
+            background-color: rgb(236, 84, 117);
+            color: white;
+            border: none;
+            }
+            @media(max-width:800px){
+                #menu{
+                width: 485px;
+                }
+                #logo{
+                font-size: 16px;         
+                margin: 10px 0px 2px 0px;
+                } 
+                li p{
+                font-size: 15px;
+                }        
+                .space2{
+                margin: 11px 10px 10px 12px; 
+                }
+                li button{
+                font-size: 14px;
+                width: 80px;
+                height: 32px;
+                margin: 3px 2px 0px 16px;
+                }
+                #content1{
+                margin: 0px 0px 0px 12px;
+                }
+                #content2{
+                margin: 0px 12px 0px 0px;
+                }
+            }
+            @media(min-width:800px){          
+                #menu{
+                width: 1000px;
+                }
+                #logo{
+                font-size: 22px;
+                margin: 8px 0px 2px 0px;         
+                } 
+                li p{
+                font-size: 15px;
+                font-weight: bold;
+                }    
+                .space2{
+                margin: 10px 10px 10px 60px; 
+                }
+                li button{
+                font-size: 15px;
+                width: 100px;
+                height: 38px;
+                margin: 0px 0px 0px 60px;
+                }
+                #content1{
+                margin-left: 170px;
+                }
+                #content2{
+                margin-right: 170px;
+                }
+                #content2{
+                transition: 1s ease-in-out;     
+                }
+                #content2:hover{
+                transform:translate(-50px,50px);
+                }
 
-    </style>
-  </head>
-  <body>
-    <div id="container1">
-          <img  id="logo" src="sjlogo.jpg">
-      <nav>
-          <ul>
-              <li> <a href="form.html" target="_blank"><button>Login/Reg</button></a></li>
-              <li> <button>Catalog</button></li>
-              <li> <button>Price</button></li>
-              <li> <a href="contact.html" target="_blank"><button>contact</button></a></li>
-              <li> <a href="about.html" target="_blank"><button>about</button></a></li>     
-          </ul>  
-      </nav>
-    </div>
-    <div id="container2">    
-      <marquee direction= "left" scrollamount="12">welcome to suraj jewelery works! we expertise in manufacturing gold, silver and diamond ornaments.</marquee>
-    </div>
-    <div class="slideshow-`container">
-  
-          <div class="mySlides fade">
-            <img src="slide1.jpg" >
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="slide2.jpg" >
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="slide3.jpg" >
-          </div>
 
-          <div class="mySlides fade">
-            <img src="ks.jpg" >
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-          
-    </div>
-          <br>
-          
-    <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-          
-      <script type="text/javascript">
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
-  
+
+            } 
+            li button:hover{
+            background-color: aqua;
+            color: rgb(236, 84, 117);
+            }
+            li:hover{
+            color: red;
+            }
+            #content{    
+            margin: auto;
+            margin-top: 40px;
+            }
+            #content1{
+            width: 460px;
+            height: 410px;    
+            float: left;
+            display: inline-block;
+            }
+            #contenttext11{
+            font-size: 50px; 
+            text-align: left; 
+            margin-top: 40px;     
+            }
+            #contenttext12{           
+            font-size: 25px;  
+            text-align: left;
+            margin-top: 50px;
+            }
+            #content1 button{
+            width: 110px;
+            height: 38px;
+            border-radius: 30px;
+            background-color: rgb(236, 84, 117);
+            color: white;
+            margin-top: 35px;
+            border: none;
+            }
+            #content1 button:hover{
+            width: 130px;
+            height: 48px;
+            border-radius: 30px;
+            background-color: rgb(236, 84, 117);
+            } 
+            #content2{
+            background-color: white;
+            border-radius: 2%;
+            width: 460px;
+            height: 410px;
+            display: inline-block;
+            float: right;
+            color: black;
+            box-shadow: 7px 7px 10px black;  
+            }
+            #signinhd{
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            }
+            .forminputs{
+            width: 360px;
+            height: 40px;
+            margin: 5px 20px 10px 50px;
+            border-radius: 30px;
+            border: 2px solid rgb(182, 176, 176);
+            color: grey;
+            font-weight: bold;
+            font-size: 16px;
+            }
+            .formtext{
+            color: grey;
+            margin-left: 50px;
+            }
+            .inputbtn{
+            width: 360px;
+            height: 40px;
+            border-radius: 30px;
+            color: white;   
+            }
+            #login{
+            background-color: #311b94;
+            border: #311b94;
+            margin: 10px 20px 5px 50px;  
+            }
+            #twitter{
+            background-color: rgb(24, 149, 199);
+            border: rgb(24, 149, 199);
+            margin: 5px 20px 3px 50px;  
+            }
+            a{
+            color: rgb(66, 188, 236);
+            font-weight: bold;
+            }
+            a:hover{
+            color: orangered;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav id="menu">
+            <p id="logo">Surajmv</p>
+            <ul>
+                <li><p class="space1">Overview</p></li>
+                <li><p class="space2">Prices</p></li>
+                <li><p class="space2">Blog</p></li>
+                <li><p class="space2">Feedback</p></li>
+                <li><button>Purchase</button></li>
+            </ul>
+        </nav>
+    
+        <div id="content">
+            <div id="content1">
+                <div id="contenttext11">
+                    Generate awesome web pages
+                </div>
+                 <div id="contenttext12">
+                    The most important part of startup is samples. The samples form a set of 25 usable pages
+                    you can use as is or you can add new blocks.   
+                 </div>
+                 <button>Learn More</button>
+            </div>
+            <div id="content2">
+                <p id="signinhd">Sign Up Now</p>
+                <Input type="text" placeholder="    Your Email" class="forminputs"></br>               
+                <Input type="text" placeholder="    Your Password" class="forminputs"></br>
+                <label for="checkbox" class="formtext"> 
+                    <input type="checkbox" name="checkbox">
+                    I agree to the terms of the service
+                </label></br>
+                <button class="inputbtn" id="login">Log In</button>
+                <p style="text-align: center; font-size: 12px; color:grey;">Or</p>
+                <button class="inputbtn" id="twitter">Login via Twitter</button>
+                <p style="text-align: center; color: grey;">Do you have an account?<a href="">Sign-In</a></p>
+            </div>
+        </div>    
     </body>
 </html>
